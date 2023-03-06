@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" id="fashion"><i class="fa-sharp fa-solid fa-tag"></i> Shop</a>
+
+        <div class="search">
+            <label for="search" class="fa-solid fa-magnifying-glass"></label>
+            <input type="search" placeholder="search for products...." name="search">
+        </div>
+
+        <div class="icons">
+            <a href="#" id="user"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+
+
+    </header>
+
+    <div class="login">
+        <form action="">
+            <div id="close">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <label for="name">name</label>
+            <input type="text" placeholder="enter name...">
+
+            <label for="email">email</label>
+            <input type="email" placeholder="enter email...">
+
+            <label for="pass">password</label>
+            <input type="password" placeholder="enter password...">
+
+            <div class="check">
+                <input type="checkbox" name="remind" id="">
+                <label for="remind">remember me</label>
+            </div>
+
+            <div class="submit">
+                <button type="submit" class="btn">login</button>
+            </div>
+        </form>
+    </div>
+
+
+    <section class="slides">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/img2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/img3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/img4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/img5.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/img6.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="categories">
+        <div class="box-container">
+            <a href="./Men.html">
+                <div class="box">
+                    <img src="./img/cat-1.png" alt="">
+                    <div class="cat">
+                        <h3>Men</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="box">
+                    <img src="./img/cat-2.png" alt="">
+                    <div class="cat">
+                        <h3>Women</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="box">
+                    <img src="./img/cat-3.png" alt="">
+                    <div class="cat">
+                        <h3>kids</h3>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="#">
+                <div class="box">
+                    <img src="./img/cat-6.png" alt="">
+                    <div class="cat">
+                        <h3>Sports</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="box">
+                    <img src="./img/cat-4.png" alt="">
+                    <div class="cat">
+                        <h3>Electronics</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="box">
+                    <img src="./img/cat-5.png" alt="">
+                    <div class="cat">
+                        <h3>Furnitures</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="products">
+        <div class="heading">
+            <h3>new <span>Arraivals</span></h3>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/pro-1.png" alt="">
+                <div class="des">
+                    <h3>t-shirt</h3>
+                    <p>upto 20% off</p>
+                </div>
+                <button id="ps-1" class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/pro-2.png" alt="">
+                <div class="des">
+                    <h3>saree</h3>
+                    <p>upto 25% off</p>
+                </div>
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/pro-4.png" alt="">
+                <div class="des">
+                    <h3>Tv</h3>
+                    <p>upto 30% off</p>
+                </div>
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/pro-5.png" alt="">
+                <div class="des">
+                    <h3>mobile case</h3>
+                    <p>upto 40% off</p>
+                </div>
+                <button class="btn">shop now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="trends">
+        <div class="heading">
+            <h3>Trending <span>Products</span></h3>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./img/tre-1.png" alt="">
+                <div class="des">
+                    <h3>smart watches</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-2.png" alt="">
+                <div class="des">
+                    <h3>shoes</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-3.png" alt="">
+                <div class="des">
+                    <h3>necklace</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-4.png" alt="">
+                <div class="des">
+                    <h3>microwave</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-5.png" alt="">
+                <div class="des">
+                    <h3>irons</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-6.png" alt="">
+                <div class="des">
+                    <h3>earphones</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-7.png" alt="">
+                <div class="des">
+                    <h3>camera</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+
+            <div class="box">
+                <img src="./img/tre-8.png" alt="">
+                <div class="des">
+                    <h3>bedsheets</h3>
+                </div>
+
+                <button class="btn">shop now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="Top-rated">
+        <div class="heading">
+            <h3>top <span>rated</span></h3>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;400;500;600&display=swap');
+:root {
+    --bg: #f8fcfb;
+    --white: #dfebed;
+    --font: #0e2431;
+    --color: #fc3a52;
+    --border: .2rem solid var(--color);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: var(--font);
+}
+
+.heading span {
+    color: var(--color);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: .7rem 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: var(--border);
+    border-radius: 10rem;
+    outline: none;
+    color: var(--color);
+    background: none;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    color: #fff;
+    background: var(--color);
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--font);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 7%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+#fashion {
+    font-size: 2.5rem;
+    color: var(--font);
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+#fashion i {
+    color: var(--color);
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    padding: .5rem;
+    width: 500px;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: rgb(240, 211, 216);
+    color: black;
+    border: var(--border);
+}
+
+.search label {
+    position: absolute;
+    font-size: 2rem;
+    top: 6px;
+    left: 5px;
+}
+
+header .icons i {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    background: var(--font);
+    padding: 1rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+header .icons i:hover {
+    rotate: 360deg;
+    transition: .3s linear;
+}
+
+main {
+    position: absolute;
+    margin-top: 6rem;
+}
+
+.login {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -400%;
+    right: 0;
+    top: 50%;
+    z-index: 4;
+    transition: .2s linear;
+}
+
+.login.active {
+    left: 0;
+    transition: .2s linear;
+}
+
+.login form {
+    position: absolute;
+    height: fit-content;
+    width: auto;
+    background: #0e2431;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.login #close i {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    font-size: 2.5rem;
+    color: #fc3a52;
+}
+
+.login form input[type=text],
+.login form input[type=email],
+.login form input[type=password] {
+    width: 100%;
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: var(--border);
+    color: #fc3a52;
+}
+
+.login form input[type=checkbox] {
+    margin-top: 1.5rem;
+}
+
+.login form label {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.login .submit .btn {
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    background: #fc3a52;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login .submit .btn:hover {
+    border: var(--border);
+    background: transparent;
+    color: #fff;
+}
+
+.slides {
+    position: relative;
+    margin-top: 5.3rem;
+}
+
+.slides .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 50rem;
+    object-fit: fill;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.categories {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.categories .box-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+}
+
+.categories .box-container .box {
+    overflow: visible;
+    padding: 1rem;
+    text-align: center;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.categories .box-container .box .cat {
+    color: var(--font);
+}
+
+.categories .box-container .box img {
+    height: 20rem;
+}
+
+.products {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.products .box-container .box .des h3 {
+    font-size: 2rem;
+    color: var(--font);
+}
+
+.products .box-container .box .des p {
+    font-size: 1.3rem;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.products .box-container .box img {
+    height: 20rem;
+    width: auto;
+}
+
+.trends {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.trends .heading {
+    margin-top: 5rem;
+}
+
+.trends .box-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.trends .box-container .box {
+    padding: 1rem;
+    background: #8be4c81a;
+    text-align: center;
+    cursor: pointer;
+    border: .2rem solid var(--font);
+    box-shadow: var(--box-shadow);
+    border-radius: .8rem;
+}
+
+.trends .box-container .box:hover {
+    transform: scale(1.05);
+    transition: .3s linear;
+}
+
+.trends .box-container .box img {
+    height: 25rem;
+}
+
+@media (max-width:991px) {
+    .search input {
+        width: 400px;
+    }
+    html {
+        font-size: 55%
+    }
+    .categories .box-container .box img {
+        height: 15rem;
+    }
+}
+
+@media (max-width:768px) {
+    .search input {
+        width: 400px;
+    }
+    header .icons i {
+        font-size: 1.2rem;
+        margin-left: .5rem;
+        background: var(--font);
+        padding: 1rem 1rem;
+        border-radius: 50%;
+        color: #fff;
+    }
+    .login form {
+        height: auto;
+        width: auto;
+    }
+    .swiper-slide img {
+        height: 25rem;
+    }
+    .categories .box-container .box img {
+        height: 10rem;
+    }
+    .search input::placeholder {
+        font-size: 1rem;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .products .box-container .box img {
+        height: 15rem;
+    }
+    .products .box-container .box img {
+        height: 10rem;
+    }
+    .products .box-container .box .des h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width:650px) {
+    .search input {
+        width: 240px;
+    }
+    .search label {
+        position: absolute;
+        font-size: 1.7rem;
+        top: 9px;
+        left: 5px;
+    }
+    #fashion {
+        font-size: 1.5rem;
+    }
+    .products .box-container .box img {
+        height: 8rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%
+    }
+    .search input {
+        width: 150px;
+        padding: .2rem;
+        height: auto;
+    }
+    .search label {
+        top: 7.2px;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .products .box-container .box img {
+        height: 10rem;
+    }
+}
