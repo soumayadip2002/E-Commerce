@@ -469,4 +469,8 @@ main {
     .products .box-container .box img {
         height: 10rem;
     }
+    .login form {
+        padding: 2rem;
+        border-radius: .5rem;
+    }
 }
