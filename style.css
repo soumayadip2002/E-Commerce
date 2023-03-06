@@ -392,6 +392,32 @@ main {
     .categories .box-container .box img {
         height: 15rem;
     }
+    .login {
+        top: 56%;
+    }
+    .login form {
+        padding: 3rem;
+    }
+    .login form input[type=text],
+    .login form input[type=email],
+    .login form input[type=password] {
+        padding: .5rem 5rem;
+        margin-bottom: .5rem;
+    }
+    .login form input[type=checkbox] {
+        margin-top: 1rem;
+    }
+    .login form label {
+        margin-top: 1rem;
+    }
+    .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login .submit {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width:768px) {
@@ -406,9 +432,57 @@ main {
         border-radius: 50%;
         color: #fff;
     }
+    .login {
+        top: 50%;
+    }
     .login form {
         height: auto;
         width: auto;
+    }
+    .login form input[type=text],
+    .login form input[type=email],
+    .login form input[type=password] {
+        width: 100%;
+        padding: 1rem 5rem;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        background: transparent;
+        border: var(--border);
+        color: #fc3a52;
+    }
+    .login form input[type=checkbox] {
+        margin-top: 1.5rem;
+    }
+    .login form label {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-left: .5rem;
+        margin-top: 1.5rem;
+        margin-bottom: .2rem;
+    }
+    .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .login .submit .btn {
+        padding: 1rem 3rem;
+        border-radius: 10rem;
+        border: none;
+        outline: none;
+        background: #fc3a52;
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
     }
     .swiper-slide img {
         height: 25rem;
