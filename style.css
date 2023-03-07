@@ -320,7 +320,7 @@ main {
 
 .products .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -387,26 +387,33 @@ main {
     margin: 0 auto;
 }
 
+.Top-rated .heading {
+    margin-top: 7rem;
+}
+
 .Top-rated .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1.5rem;
-    background: #e0ffcd;
     padding: 1rem;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+    margin-top: 3rem;
 }
 
 .Top-rated .box-container .box {
     text-align: center;
-    background: #a2a8d3;
     overflow: hidden;
     border-radius: 1rem;
-    position: relative;
+    background: none;
+    padding-top: 1rem;
+    border: .1rem solid #c2bfbf;
+    box-shadow: var(--box-shadow);
+    background: #fcf4d9;
 }
 
 .Top-rated .box-container .box .des {
     display: grid;
+    border-top: .1rem solid #c2bfbf;
 }
 
 .Top-rated .box-container .box .des h2 {
@@ -433,8 +440,9 @@ main {
 }
 
 .Top-rated .box-container .box img {
-    height: 16rem;
+    height: 13rem;
     width: auto;
+    padding-bottom: .5rem;
 }
 
 @media (max-width:991px) {
@@ -473,8 +481,8 @@ main {
     .login .submit {
         margin-top: 1rem;
     }
-    .Top-rated .box-container .box img {
-        height: 14.5rem;
+    .products .box-container .box img {
+        height: 10rem;
     }
 }
 
@@ -554,17 +562,8 @@ main {
     .heading {
         font-size: 2.5rem;
     }
-    .products .box-container .box img {
-        height: 15rem;
-    }
-    .products .box-container .box img {
-        height: 10rem;
-    }
     .products .box-container .box .des h3 {
         font-size: 1.7rem;
-    }
-    .Top-rated .box-container .box img {
-        height: 16rem;
     }
 }
 
@@ -584,9 +583,6 @@ main {
     .products .box-container .box img {
         height: 8rem;
     }
-    .Top-rated .box-container .box img {
-        height: 18.5rem;
-    }
 }
 
 @media (max-width:450px) {
@@ -604,14 +600,11 @@ main {
     .heading {
         font-size: 2rem;
     }
-    .products .box-container .box img {
-        height: 10rem;
-    }
     .login form {
         padding: 2rem;
         border-radius: .5rem;
     }
-    .Top-rated .box-container .box img {
-        height: 16rem;
+    .products .box-container .box img {
+        height: 11rem;
     }
 }
