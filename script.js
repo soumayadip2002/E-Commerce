@@ -56,6 +56,5 @@ document.querySelector(".product_popup-close").addEventListener("click", toggleP
 
 function portfolioItemDetails(portfolioItem) {
     document.querySelector(".product_thumbnail img").src = portfolioItem.querySelector(".product_img").src;
-    document.querySelector(".product_popup-subtitle span").innerHTML = portfolioItem.querySelector(".product_title").innerHTML;
     document.querySelector(".product_popup-body").innerHTML = portfolioItem.querySelector(".product_item-details").innerHTML;
 }
