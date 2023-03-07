@@ -305,6 +305,7 @@ main {
 
 .categories .box-container .box .cat {
     color: var(--font);
+    font-size: 1.6rem;
 }
 
 .categories .box-container .box img {
