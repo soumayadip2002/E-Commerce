@@ -409,6 +409,8 @@ main {
     border: .1rem solid #c2bfbf;
     box-shadow: var(--box-shadow);
     background: #fcf4d9;
+    cursor: pointer;
+    position: relative;
 }
 
 .Top-rated .box-container .box .des {
@@ -443,6 +445,48 @@ main {
     height: 13rem;
     width: auto;
     padding-bottom: .5rem;
+}
+
+#cart {
+    position: absolute;
+    top: .5rem;
+    left: -15rem;
+    padding: .4rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #240747;
+    border-radius: 50%;
+    transition: .2s linear;
+}
+
+#cart:hover {
+    background: #004445;
+}
+
+#fav {
+    position: absolute;
+    top: .5rem;
+    right: -15rem;
+    padding: .4rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background: #240747;
+    border-radius: 50%;
+    transition: .2s linear;
+}
+
+#fav:hover {
+    background: #004445;
+}
+
+.Top-rated .box-container .box:hover #cart {
+    left: 0.5rem;
+    transition: .2s linear;
+}
+
+.Top-rated .box-container .box:hover #fav {
+    right: 3px;
+    transition: .2s linear;
 }
 
 @media (max-width:991px) {
