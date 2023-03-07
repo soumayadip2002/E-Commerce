@@ -39,3 +39,23 @@ var swiper = new Swiper(".mySwiper", {
 
 
 });
+
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("product_button")) {
+        togglePortfolioPopup();
+        portfolioItemDetails(e.target.parentElement);
+    }
+})
+
+function togglePortfolioPopup() {
+    document.querySelector(".product_popup").classList.toggle("open");
+}
+
+document.querySelector(".product_popup-close").addEventListener("click", togglePortfolioPopup)
+
+function portfolioItemDetails(portfolioItem) {
+    document.querySelector(".product_thumbnail img").src = portfolioItem.querySelector(".product_img").src;
+    document.querySelector(".product_popup-subtitle span").innerHTML = portfolioItem.querySelector(".product_title").innerHTML;
+    document.querySelector(".product_popup-body").innerHTML = portfolioItem.querySelector(".product_item-details").innerHTML;
+}
