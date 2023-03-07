@@ -58,3 +58,31 @@ function portfolioItemDetails(portfolioItem) {
     document.querySelector(".product_thumbnail img").src = portfolioItem.querySelector(".product_img").src;
     document.querySelector(".product_popup-body").innerHTML = portfolioItem.querySelector(".product_item-details").innerHTML;
 }
+
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+
+    }
+});

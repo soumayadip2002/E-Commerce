@@ -52,7 +52,8 @@ html {
     font-size: 62.5%;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -541,6 +542,7 @@ main {
 .product_popup-img {
     border-radius: .5rem;
     max-width: 100%;
+    border: .2rem solid #ccc;
 }
 
 .product_title {
@@ -592,6 +594,63 @@ main {
 
 .products_info .cartd {
     text-align: center;
+}
+
+.testimonals {
+    background: #eee;
+    padding: 2rem 9%;
+}
+
+.testimonals {
+    margin-top: 3rem;
+}
+
+.testimonals .box {
+    margin-top: 3rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.testimonals .box .fa-quote-right {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+
+.testimonals .box .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.testimonals .box .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonals .user h3 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.testimonals .user .stars i {
+    font-size: 1.3rem;
+    color: var(--color);
+}
+
+.testimonals p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: left;
+    color: var(#eee);
 }
 
 @media (max-width:991px) {
