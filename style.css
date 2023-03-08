@@ -597,8 +597,8 @@ main {
 }
 
 .testimonals {
-    background: #eee;
     padding: 2rem 9%;
+    background: #aaa;
 }
 
 .testimonals {
@@ -651,6 +651,114 @@ main {
     line-height: 1.8;
     text-align: left;
     color: var(#eee);
+}
+
+.foot {
+    width: 100%;
+    background: var(--white);
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.foot .socials {
+    display: flex;
+}
+
+.foot .socials h3 {
+    font-size: 1.5rem;
+}
+
+.foot .socials i {
+    margin: 0 1rem;
+    font-size: 2rem;
+    background: var(--font);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    margin-top: -.5rem;
+    color: var(--bg);
+    cursor: pointer;
+}
+
+.foot .socials i:hover {
+    scale: 1.1;
+    transition: .3s linear;
+    color: var(--color);
+    background: var(--white);
+}
+
+.foot .quick-links {
+    display: grid;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.foot .quick-links a {
+    margin-top: 1rem;
+    color: var(--color);
+}
+
+.foot .quick-links a:hover {
+    text-decoration: underline;
+}
+
+.foot .quick-links a i {
+    color: var(--font);
+}
+
+.foot .quick-links a i:hover {
+    padding-left: 1.5rem;
+}
+
+.foot .contact {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.foot .contact h3 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    color: var(--font);
+}
+
+.foot .contact h2 {
+    font-size: 1.8rem;
+    color: var(--color);
+}
+
+.foot .contact h3:hover {
+    text-decoration: underline;
+}
+
+.foot .pay {
+    display: grid;
+    margin-top: 1rem;
+}
+
+.foot .pay input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    margin-top: -1rem;
+    border: .1rem solid rgba(0, 0, 0, 0.5);
+    background: transparent;
+    outline: none;
+    color: var(--color);
+}
+
+.foot .pay input::placeholder {
+    color: var(--font);
+}
+
+.foot .pay label {
+    z-index: 1;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    width: fit-content;
+    background: var(--white);
+    padding: 0 0.5rem;
 }
 
 @media (max-width:991px) {
@@ -772,6 +880,12 @@ main {
     }
     .products .box-container .box .des h3 {
         font-size: 1.7rem;
+    }
+    .foot {
+        width: 100%;
+        background: var(--white);
+        padding: 4rem;
+        display: grid;
     }
 }
 
